@@ -1,0 +1,597 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  /* padding: 0; */
+  box-sizing: border-box;
+  color: #7e7162;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Mukta Mahee", sans-serif;
+  color: #333;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #000;
+  font-weight: 900;
+  -webkit-text-stroke: 1px;
+}
+
+p {
+  margin-bottom: 1rem;
+  font-size: x-large;
+  margin: auto;
+}
+
+/* Header */
+header {
+  background: #ffffff00;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+}
+
+header .logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  font-family: "Abril Fatface", times, serif;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+header nav ul li a {
+  color: #000;
+}
+
+header nav ul {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul.active {
+  display: flex;
+}
+
+header nav .menu-toggle {
+  display: block;
+  cursor: pointer;
+  font-size: 50px;
+  width: 40px;
+  color: #fff;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: url("/images/hero_1.jpg.webp") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+.hero div h1,
+p,
+a,
+button {
+  z-index: 33;
+  position: relative;
+  color: #a7a7a7;
+}
+.hero h1 {
+  font-size: 9rem;
+  font-weight: 900;
+  letter-spacing: 0px;
+  margin-bottom: 1rem;
+  font-family: "Abril Fatface", times, serif;
+  color: white !important;
+}
+.hero p {
+  font-size: 1.5rem;
+}
+.hero a:first-child {
+  color: gray;
+  text-decoration: underline;
+}
+.hero button {
+  padding: 30px 70px;
+  margin: 50px;
+  color: #fff;
+  font-size: larger;
+  letter-spacing: 5px;
+  background-color: #77777700;
+  border: 4px solid white;
+  border-radius: 10px;
+}
+.hero button:hover {
+  background-color: #f4f4f4;
+  color: #000;
+}
+.hero:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #000000ca;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.SD {
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 20px;
+
+  color: #ffffff;
+}
+.SD i {
+  transform: rotate(90deg);
+  color: #ffffff;
+}
+.sd span {
+  color: #ffffff;
+}
+/* Welcome Section */
+.welcome {
+  padding: 4rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome img {
+  max-width: 600px;
+  width: 100%;
+}
+
+.welcome-text {
+  max-width: 600px;
+  width: 100%;
+}
+
+.welcome-text i {
+  color: #1bc1d0;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  letter-spacing: 3px;
+  padding: 20px;
+  padding-left: 25px;
+  border: 1px rgba(128, 128, 128, 0.557) solid;
+  border-radius: 50%;
+}
+.welcome span:last-child {
+  color: #1bc1d0;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+/* Services Section */
+.services {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #f1f1f1;
+}
+
+.services h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.services p {
+  width: 50%;
+  margin: auto;
+  padding-bottom: 20px;
+}
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.service-item {
+  background: #ffffff00;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(33.333% - 2rem);
+  max-width: calc(33.333% - 2rem);
+}
+
+.service-item h3 {
+  font-size: 3rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-bottom: 1rem;
+}
+
+.service-item p {
+  font-size: 2rem;
+  color: #777;
+}
+.service-item img {
+  width: 100px;
+  margin: auto;
+}
+/* Slider Section */
+.international-tour {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.international-tour h2 {
+  font-size: 5rem;
+  margin-bottom: 0.5rem;
+}
+.international-tour p {
+  width: 50%;
+  font-size: xx-large;
+}
+.mySlides {
+  display: block;
+  position: relative;
+  width: 9;
+}
+img {
+  /* margin-top: 2em; */
+  vertical-align: middle;
+  /* border-radius:20px; */
+}
+
+.slideshow-container {
+  width: 70%;
+  position: relative;
+  margin: auto;
+}
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 48px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: -50px;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  left: -50px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.dot {
+  position: relative;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  top: -50px;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/* Blog Section */
+.blog {
+  margin-top: -400px;
+  padding: 20rem 2rem;
+  background: #009688;
+}
+
+.blog h2 {
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+.blog-posts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.blog-post {
+  background: #fff;
+  /* padding: 2rem; */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(33.333% - 12rem);
+  max-width: calc(33.333% - 6rem);
+  text-align: start;
+  min-height: 600px;
+}
+
+.blog-post img {
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+
+.blog-post span {
+  padding-left: 30px;
+  color: rgba(128, 128, 128, 0.597);
+  font-size: x-large;
+}
+.blog-post h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  margin-top: 2rm;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.blog-post p {
+  font-size: 1.5rem;
+  color: #777;
+  margin-bottom: 2rem;
+  padding-left: 30px;
+  line-height: 50px;
+  padding-right: 30px;
+}
+
+/* Customer Reviews Section */
+.customers {
+  padding: 9rem 2rem;
+}
+
+.customers h2 {
+  text-align: center;
+  font-size: 6rem;
+  margin-bottom: 2rem;
+}
+
+.customer-reviews {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.review {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(33.333% - 2rem);
+  max-width: calc(33.333% - 2rem);
+  text-align: center;
+}
+
+.review img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.review p {
+  font-size: 1.7rem;
+  font-style: italic;
+  color: #777;
+}
+
+.review h4 {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  text-align: start;
+  color: #7171719f;
+  font-style: italic;
+}
+
+/* Top Destinations Section */
+.top-destinations {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.top-destinations h2 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.destinations {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.destination {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  flex: 1 1 calc(25% - 2rem);
+  max-width: calc(25% - 2rem);
+}
+
+.destination img {
+  width: 100%;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.destination h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: start;
+  color: #000;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.destination p {
+  font-size: 1rem;
+  color: #777;
+  text-align: start;
+}
+.checked {
+  text-align: start;
+  color: rgb(22, 226, 216);
+}
+#rnum {
+  margin-left: 4rem;
+  text-align: end;
+  font-style: italic;
+  font-size: 1.3rem;
+  color: #0000005c;
+}
+.rev {
+  display: flex;
+  justify-content: space-between;
+}
+.rev:nth-last-child(span) {
+  font-size: x-large;
+}
+.footer {
+  background: #111;
+  color: #fff;
+  padding: 2rem 1rem;
+}
+
+.footer .footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 140px;
+}
+
+.footer .column {
+  flex: 1 1 200px;
+  margin: 1rem;
+}
+
+.footer h3 {
+  font-family: "Abril Fatface", serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  color: white;
+  font-size: x-large;
+}
+
+.footer ul li {
+  margin: 0.5rem 0;
+  color: white;
+  font-size: 1rem;
+}
+
+.footer ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.column ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.footer .contact-info p {
+  margin: 0.5rem 0;
+}
+
+.footer .subscribe {
+  display: flex;
+  align-items: center;
+}
+
+.footer .subscribe input[type="email"] {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+}
+
+.footer .subscribe button {
+  padding: 0.5rem 1rem;
+  background: #555;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer .social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.footer .social-icons a {
+  margin: 0 0.5rem;
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.footer .copyright {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #777;
+}
